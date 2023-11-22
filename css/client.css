@@ -1,0 +1,289 @@
+body {
+    background-color: white;
+    font-family: Latos, sans-serif;
+    color: #333333;
+}
+
+h3 {
+    text-align: center;
+}
+
+.container {
+    border-radius: 10px;
+}
+
+.container-top {
+    margin-top: 60px;
+    box-shadow: 0px 6px 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+.account-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 20px;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.account-card p {
+    margin-top: 2px;
+}
+
+.account-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+/* HEADER NAV */
+
+.logo {
+    font-size: 22px;
+}
+
+.sign-up {
+    font-weight: bold;
+}
+
+.sign-un:hover {
+    background-color: #DEF249;
+    font-weight: bold;
+}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: white;
+    font-size: 14px !important;
+    border: 0;
+
+}
+
+.navbar li a,
+.navbar .navbar-brand {
+    color: #333333 !important;
+    background-color: white !important;
+}
+
+.navbar-nav li a:hover,
+.navbar-nav li.active a {
+    color: #333333 !important;
+    background-color: #DEF249 !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+.icon-bar {
+    border: 1px solid #333333;
+}
+
+
+/* CARDS */
+
+.cards {
+    margin-top: 20px;
+    justify-content: space-around;
+    margin-bottom: 0;
+}
+
+.card {
+    margin-bottom: 10px;
+    border: 0px;
+}
+
+.our-card {
+    position: relative;
+    height: 180px;
+    width: 290px;
+    border-radius: 25px;
+    backdrop-filter: blur(30px);
+    overflow: hidden;
+    transition: .3s;
+    margin-bottom: 20px;
+}
+
+.our-card:hover {
+    transform: scale(1.1);
+}
+
+.card-logo img,
+.card-name,
+.chip img {
+    position: absolute;
+}
+
+.card-logo img {
+    top: 10px;
+    right: 25px;
+    width: 60px;
+    height: auto;
+}
+
+.chip img {
+    top: 90px;
+    left: 30px;
+    width: 35px;
+    height: auto;
+    opacity: 0.8;
+}
+
+.card-name {
+    font-size: 1em;
+    right: 205px;
+    bottom: 125px;
+    color: #333333;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.standard {
+    background: linear-gradient(to left, #DEF341e9, #33333390);
+}
+
+.plus {
+    background: linear-gradient(to left, #8fce657e, #10396350);
+}
+
+.premium {
+    background: linear-gradient(to left, rgba(223, 91, 58, 0.494), rgba(236, 164, 8, 0.603));
+}
+
+.yellow {
+    background-color: #def341e9;
+}
+
+.bi-cash-coin {
+    color: #333333
+}
+
+.bi-cart-fill,
+.bi-house-fill,
+.bi-box2-fill {
+    color: #def341e9;
+}
+
+.cash {
+    background-color: #333333;
+    color: white;
+}
+
+.first {
+    align-items: start;
+}
+
+
+.test {
+    border-radius: 10px;
+    filter: drop-shadow(0 5px 10px 0 #333333);
+    background-color: #333333;
+    padding: 20px;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in;
+    color: white;
+}
+
+.test::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -15px;
+    right: -15px;
+    background: #DEF249;
+    height: 220px;
+    width: 25px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.25s ease-out;
+}
+
+.test:hover::before {
+    transition-delay: 0.2s;
+
+    transform: scale(100);
+}
+
+.test:hover {
+    color: #333333;
+
+}
+
+.test:hover svg {
+    color: #333333;
+
+}
+
+.bizum-body {
+    height: 30px;
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+.bizum-body:hover, .bizum-body:focus-within {
+    height: 120px;
+}
+
+.bizum {
+    border: none;
+    border-bottom: 1px solid #33333366;
+    transition: .3s;
+    background-color: transparent;
+    color: #333333;
+}
+
+.bizum:focus {
+    outline: none;
+    background-color: #c6d84061;
+    border-radius: 5px;
+}
+
+/* Mobile Cards */
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 1.5em;
+    }
+
+    /* .our-card {
+        height: 190px;
+        width: 300px;
+    }
+
+    .card-logo {
+        transform: scale(0.6);
+        position: relative;
+        top: 1px;
+        left: 55px;
+    }
+
+    .card-name {
+        position: relative;
+        transform: scale(0.7);
+        top: 20px;
+        left: -20px;
+    }
+
+    .chip {
+        position: relative;
+        transform: scale(0.7);
+        right: 45px;
+        bottom: 30px;
+    } */
+
+}
+
+.title {
+    margin-bottom: 30px;
+}

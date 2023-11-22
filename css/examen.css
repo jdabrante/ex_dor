@@ -1,0 +1,209 @@
+body {
+    background-color: white;
+    font-family: Latos, sans-serif;
+    color: #333333;
+}
+
+h3 {
+    text-align: center;
+}
+
+.container {
+    border-radius: 10px;
+}
+
+.container-top {
+    margin-top: 60px;
+    box-shadow: 0px 6px 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+.risk {
+    margin: 0px 40px 20px 40px;
+    height: auto;
+    padding-top: 20px;
+}
+
+.level {
+    text-align: center;
+    margin: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 15px;
+    height: 40px;
+}
+
+.onesix {
+    display: flex;
+    font-size: 2em;
+    justify-content: center;
+}
+
+.indicative,
+.guarante {
+    text-align: justify;
+    font-size: 1em;
+}
+
+.r {
+    margin-top: 100px;
+    border: 1px solid #333333;
+}
+
+.panel {
+    background-color: #DEF249;
+    transition: 0.5s ease;
+}
+
+.panel:hover{
+    transform: scale(1.05);
+}
+
+/* HEADER NAV */
+
+.logo {
+    font-size: 22px;
+}
+
+.sign-up {
+    font-weight: bold;
+}
+
+.sign-un:hover {
+    background-color: white;
+    font-weight: bold;
+}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #DEF249 !important;
+    font-size: 17px !important;
+    border: 0;
+    transition: 0.5s;
+
+}
+
+.navbar li a,
+.navbar .navbar-brand {
+    color: #333333 !important;
+    background-color: #DEF249 !important;
+    transition: 0.3s ease;
+}
+
+.navbar-nav li a:hover,
+.navbar-nav li.active a {
+    color: #333333 !important;
+    background-color: white !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+.icon-bar {
+    border: 1px solid #333333;
+}
+
+
+/* CARDS */
+
+.cards {
+    margin-top: 20px;
+    justify-content: space-around;
+    margin-bottom: 0;
+}
+
+.card {
+    margin-bottom: 10px;
+    border: 0px;
+}
+
+.our-card {
+    position: relative;
+    height: 180px;
+    width: 290px;
+    border-radius: 25px;
+    backdrop-filter: blur(30px);
+    overflow: hidden;
+    transition: .3s;
+    margin-bottom: 20px;
+}
+
+.our-card:hover {
+    transform: scale(1.1);
+}
+
+.card-logo img,
+.card-name,
+.chip img {
+    position: absolute;
+}
+
+.card-logo img {
+    top: 10px;
+    right: 25px;
+    width: 60px;
+    height: auto;
+}
+
+.chip img {
+    top: 90px;
+    left: 30px;
+    width: 35px;
+    height: auto;
+    opacity: 0.8;
+}
+
+.card-name {
+    font-size: 1em;
+    right: 205px;
+    bottom: 125px;
+    color: #333333;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.standard {
+    background: linear-gradient(to left, #DEF341e9, #33333390);
+}
+
+.plus {
+    background: linear-gradient(to left, #8fce657e, #10396350);
+}
+
+.premium {
+    background: linear-gradient(to left, rgba(223, 91, 58, 0.494), rgba(236, 164, 8, 0.603));
+}
+
+
+/* Mobile Cards */
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 1.5em;
+    }
+
+}
+
+.title {
+    margin-bottom: 30px;
+}
+
+.footer {
+    background-color: #333333;
+    color: white;
+    padding: 50px 0; /* Ajuste del espacio interno del footer */
+    height: 400px;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        background-color: #333333;
+        color: white;
+        padding: 50px 0; /* Ajuste del espacio interno del footer */
+        height: 550px;
+    }
+}
